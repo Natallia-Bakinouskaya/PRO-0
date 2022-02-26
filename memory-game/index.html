@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="title">
+                <h1>Memory Game</h1>
+            </div>
+
+
+            <nav>
+                <ul>
+                    <li class="nav-item">
+                        <h2 class="link play">Restart Game</h2>
+                    </li>
+                    <li class="nav-item">
+                        <h2 class="link score">Game statistics</h2>
+
+                    </li>
+
+
+                </ul>
+
+
+            </nav>
+            <div class="best-score">
+                <ol class="score-list">
+                    <li class="score-item">
+                        -
+                    </li>
+                    <li class="score-item">
+                        -
+                    </li>
+                    <li class="score-item">
+                        -
+                    </li>
+                    <li class="score-item">
+                        -
+                    </li>
+                    <li class="score-item">
+                        -
+                    </li>
+                    <li class="score-item">
+                        -
+                    </li>
+                    <li class="score-item">
+                        -
+                    </li>
+                    <li class="score-item">
+                        -
+                    </li>
+                    <li class="score-item">
+                        -
+                    </li>
+                    <li class="score-item">
+                        -
+                    </li>
+
+                </ol>
+            </div>
+
+        </div>
+
+    </header>
+    <main>
+        <div class="container">
+
+            <div class="card-container">
+                <div class="winner">
+
+                </div>
+
+                <div class="memory-card" data-framework="JC">
+                    <img class="front-face" src="assets/svg/JC.png" alt="1">
+                    <img class="back-face" src="assets/svg/1B.png" alt="Memory Card">
+                </div>
+
+                <div class="memory-card" data-framework="JC">
+                    <img class="front-face" src="assets/svg/JC.svg" alt="1">
+                    <img class="back-face" src="assets/svg/1B.svg" alt="Memory Card">
+                </div>
+
+                <div class="memory-card" data-framework="JH">
+                    <img class="front-face" src="assets/svg/JH.svg" alt="2">
+                    <img class="back-face" src="assets/svg/1B.svg" alt="Memory Card">
+                </div>
+
+                <div class="memory-card" data-framework="JH">
+                    <img class="front-face" src="assets/svg/JH.svg" alt="2">
+                    <img class="back-face" src="assets/svg/1B.svg" alt="Memory Card">
+                </div>
+
+                <div class="memory-card" data-framework="KD">
+                    <img class="front-face" src="assets/svg/KD.svg" alt="3">
+                    <img class="back-face" src="assets/svg/1B.svg" alt="Memory Card">
+                </div>
+
+                <div class="memory-card" data-framework="KD">
+                    <img class="front-face" src="assets/svg/KD.svg" alt="3">
+                    <img class="back-face" src="assets/svg/1B.svg" alt="Memory Card">
+                </div>
+
+                <div class="memory-card" data-framework="KS">
+                    <img class="front-face" src="assets/svg/KS.svg" alt="4">
+                    <img class="back-face" src="assets/svg/1B.svg" alt="Memory Card">
+                </div>
+
+                <div class="memory-card" data-framework="KS">
+                    <img class="front-face" src="assets/svg/KS.svg" alt="4">
+                    <img class="back-face" src="assets/svg/1B.svg" alt="Memory Card">
+                </div>
+
+                <div class="memory-card" data-framework="QD">
+                    <img class="front-face" src="assets/svg/QD.svg" alt="5">
+                    <img class="back-face" src="assets/svg/1B.svg" alt="Memory Card">
+                </div>
+
+                <div class="memory-card" data-framework="QD">
+                    <img class="front-face" src="assets/svg/QD.svg" alt="5">
+                    <img class="back-face" src="assets/svg/1B.svg" alt="Memory Card">
+                </div>
+
+                <div class="memory-card" data-framework="TH">
+                    <img class="front-face" src="assets/svg/TH.svg" alt="6">
+                    <img class="back-face" src="assets/svg/1B.svg" alt="Memory Card">
+                </div>
+
+                <div class="memory-card active" data-framework="TH">
+                    <img class="front-face" src="assets/svg/TH.svg" alt="6">
+                    <img class="back-face" src="assets/svg/1B.svg" alt="Memory Card">
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="container footer">
+            <div class="footer-info">
+                <p class="footer-info-item">©</p>
+                <p class="footer-info-item">2022</p>
+                <a class="footer-info-item link github-link" href="https://github.com/Natallia-Bakinouskaya" target="_blank">github</a>
+            </div>
+            <div class="rss-link-container">
+                <a class="link rss-link" href="https://rs.school" target="_blank">
+                    <svg class="rss-image link" src='./assets/svg/rss.svg'>
+                        <use xlink:href="./assets/svg/sprite.svg#rss"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
