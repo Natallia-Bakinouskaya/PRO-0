@@ -1,0 +1,251 @@
+/* @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('./assets/fonts/roboto-v29-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+
+
+/* url('../fonts/roboto-v29-latin_cyrillic-regular.woff') format('woff'); */
+
+
+/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+
+
+/* } */
+
+
+/* Variables */
+
+:root {
+    --color-gold: orange;
+    --color-red: rgb(236, 103, 62);
+    --color-white: #fff;
+}
+
+
+/* General styles */
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(112, 112, 82);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 50px;
+    color: #fff;
+    /* overflow: hidden; */
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+.container {
+    width: 100%;
+    /* background-color: #000; */
+    /* min-width: 1440px; */
+    margin: 0 auto;
+    overflow: auto;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    flex-wrap: wrap;
+}
+
+.container.header,
+.container.footer {
+    background-color: rgb(112, 107, 78);
+    /* height: 90px; */
+    /* flex-wrap: wrap; */
+}
+
+@media (max-width: 768px) {
+    .container.header,
+    .container.footer {
+        flex-direction: column;
+        height: 150px;
+    }
+}
+
+main .container {
+    min-height: calc(100vh - 180px);
+    overflow: scroll;
+    background-image: linear-gradient(to bottom right, rgb(90, 124, 93), rgb(182, 167, 126));
+}
+
+@media (max-width: 768px) {
+    main .container {
+        height: calc(100vh - 300px);
+    }
+}
+
+.link {
+    color: var(--color-gold);
+    fill: var(--color-gold);
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .link {
+        font-size: 24px;
+    }
+}
+
+
+/* .link.active {
+        fill: var(--color-gold);
+    } */
+
+.link:hover {
+    color: var(--color-red);
+    fill: var(--color-red);
+}
+
+
+/* header */
+
+header {
+    border-bottom: solid 5px var(--color-gold);
+}
+
+.unsplash-container {
+    margin-left: 20px;
+}
+
+.unsplash-img {
+    list-style: none;
+    background: url("assets/svg/foto.svg") no-repeat 0px -2px;
+    padding-left: 80px;
+    font-size: 50px;
+    color: var(--color-gold);
+}
+
+
+/* search */
+
+.search-form-container {
+    margin-right: 20px;
+}
+
+form {
+    position: relative;
+    width: 360px;
+    background: #F9F0DA;
+    border-bottom: 4px solid var(--color-gold);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 10px 10px;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+input {
+    /* width: 100%; */
+    height: 42px;
+    padding-left: 30px;
+    background: transparent;
+}
+
+button {
+    height: 42px;
+    width: 42px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    cursor: pointer;
+}
+
+del {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    color: var(--color-gold);
+}
+
+button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 30px;
+    color: var(--color-gold);
+    transition: 1.5s;
+}
+
+form .link:hover {
+    filter: invert(15%) sepia(10%) saturate(10000%) hue-rotate( 10deg) brightness(1000%) contrast(60%);
+}
+
+
+/* footer */
+
+.rss-link-container {
+    margin-left: auto;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.rss-image {
+    width: 135px;
+    height: 50px;
+}
+
+.footer-info {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    color: var(--color-gold);
+    padding: 0px;
+}
+
+.footer-info-item {
+    padding: 0 20px;
+}
+
+.container.footer {
+    padding: 0px;
+}
+
+
+/* main */
+
+.grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.img {
+    width: 380px;
+    height: 200px;
+    margin-top: 15px;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 2px;
+}
+
+@media(max-width: 768px) {
+    .img {
+        width: 100%;
+    }
+}
